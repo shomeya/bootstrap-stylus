@@ -7,24 +7,42 @@ To learn more about using the framework see the bootstrap docs at http://twitter
 
 ## Use
 
-Javascript - just add it to stylus's paths:
+Javascript - add just like you'd use nib:
 
-    stylus(content).set('paths',[require('bootstrap-stylus')]).render(....)
+```javascript
+var bootstrap = require('bootstrap-stylus'),
+       stylus = require('stylus');
 
+function compile(str, path) {
+  return stylus(str)
+    .set('filename', path)
+    .use(bootstrap());
+}
+
+app.use(stylus.middleware({
+  src: __dirname + '/public',
+  compile: compile
+}));
+```
 
 in your .style files:
 
-    @import bootstrap
+```css
+@import bootstrap
+````
 
 or set variables before importing:
 
-    $linkColor = red
-    @import bootstrap
+```css
+$linkColor = red
+@import bootstrap
+```
 
 You can also import individual files by specifying their filename:
 
-    @import reset
-
+```css
+@import reset
+```
 
 ## Authors
 
