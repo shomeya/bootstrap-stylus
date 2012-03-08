@@ -9,6 +9,9 @@
   },
   "author": "Michael Prasuhn <mike@mikeyp.net>",
   "main" : "./lib",
+  "scripts" : { 
+    "test" : "node test/test.js" 
+    },
   "directories": {
     "lib": "."
   },

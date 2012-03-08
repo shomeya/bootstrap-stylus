@@ -66,7 +66,7 @@ font-monospace($weight = normal, $size = 12px, $lineHeight = 20px)
 
 // Grid System
 fixed-container()
-  width: s('%spx', $siteWidth)
+  width: $siteWidth
   margin-left: auto
   margin-right: auto
   clearfix()
@@ -186,7 +186,7 @@ gradient-vertical-three-colors($startColor = #00b3ee, $midColor = #7a43b6, $colo
     
 // Reset filters for IE
 reset-filter()
-  filter: s('%s', "progid:DXImageTransform.Microsoft.gradient(enabled = false)")
+  filter: s("progid:DXImageTransform.Microsoft.gradient(enabled = false)")
 
 // Opacity
 opacity($opacity = 100)
