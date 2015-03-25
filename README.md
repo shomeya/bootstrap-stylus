@@ -1,4 +1,11 @@
+# Deprecated!
+
+This package is deprecated. Please see [ bootstrap-styl](https://www.npmjs.com/package/bootstrap-styl).
+
+---
+
 # bootstrap-stylus
+
 
 A basic port of the Twitter Bootstrap CSS framework to stylus. Ideal for node.js apps using connect or express.
 
